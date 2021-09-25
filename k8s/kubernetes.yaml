@@ -21,3 +21,5 @@ spec:
           env:
             - name: APP_ENV
               value: "local"
+            - name: DEBUG
+              value: "False"

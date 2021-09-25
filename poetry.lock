@@ -180,6 +180,14 @@ dotenv = ["python-dotenv (>=0.10.4)"]
 email = ["email-validator (>=1.0.3)"]
 
 [[package]]
+name = "pydevd-pycharm"
+version = "213.3714.452"
+description = "PyCharm Debugger (used in PyCharm and PyDev)"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "pyparsing"
 version = "2.4.7"
 description = "Python parsing module"
@@ -298,7 +306,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "20419101b6b7d2cf2a1793551b5512deb7984cf398ede26efe0c448426960593"
+content-hash = "8702d33d8591912ef95f037e5b1d671a9e6d099e9cfc83f7d0c5da8c7deba78a"
 
 [metadata.files]
 alembic = [
@@ -484,6 +492,9 @@ pydantic = [
     {file = "pydantic-1.8.2-cp39-cp39-win_amd64.whl", hash = "sha256:4be75bebf676a5f0f87937c6ddb061fa39cbea067240d98e298508c1bda6f3f3"},
     {file = "pydantic-1.8.2-py3-none-any.whl", hash = "sha256:fec866a0b59f372b7e776f2d7308511784dace622e0992a0b59ea3ccee0ae833"},
     {file = "pydantic-1.8.2.tar.gz", hash = "sha256:26464e57ccaafe72b7ad156fdaa4e9b9ef051f69e175dbbb463283000c05ab7b"},
+]
+pydevd-pycharm = [
+    {file = "pydevd-pycharm-213.3714.452.tar.gz", hash = "sha256:2684d3e65a2c6487b1b120c8ecba0dd236ee6eb84cab7830b57e9d668ef8d5f9"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
