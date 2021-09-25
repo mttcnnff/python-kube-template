@@ -16,10 +16,11 @@ RUN pyenv global ${PYTHON_VERSION}
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
 ENV PATH="/root/.local/bin:$PATH"
 
-
 WORKDIR /app
-COPY . .
+COPY poetry.lock pyproject.toml ./
 RUN poetry install
+
+COPY . .
 
 
 EXPOSE 8000

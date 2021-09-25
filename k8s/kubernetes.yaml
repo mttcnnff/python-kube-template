@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spend-api
+  labels:
+    app: spend-api
+spec:
+  selector:
+    matchLabels:
+      app: spend-api
+  template:
+    metadata:
+      labels:
+        app: spend-api
+    spec:
+      containers:
+        - name: spend-api
+          image: spend-api:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: APP_ENV
+              value: "local"

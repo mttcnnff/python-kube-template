@@ -11,4 +11,12 @@ class Settings(BaseSettings):
 
 
 def inject_settings() -> Settings:
-    return Settings(_env_file=f"./{os.environ['APP_ENV']}.env")
+    return Settings(_env_file=f"./spend_api/{os.environ['APP_ENV']}.env")
+
+
+
+
+
+
+def noop():
+    pass
