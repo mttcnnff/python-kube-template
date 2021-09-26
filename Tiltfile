@@ -1,10 +1,10 @@
 # -*- mode: Python -*
 
-k8s_yaml('k8s/kubernetes.yaml')
+k8s_yaml(['k8s/local/kubernetes.yaml', 'k8s/local/postgres.yaml'])
 k8s_resource('spend-api', port_forwards=8000)
+k8s_resource('spend-api-db', port_forwards=5432)
 
-# Add a live_update rule to our docker_build
-congrats = "🎉 Congrats, you ran a live_update! 🎉"
+docker_prune_settings(disable=False, num_builds=1, keep_recent=2 )
 docker_build('spend-api:latest', '.', build_args={},
     live_update=[
         sync('.', '/app'),

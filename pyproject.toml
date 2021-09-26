@@ -11,6 +11,7 @@ uvicorn = "^0.15.0"
 alembic = "^1.7.3"
 pydantic = {extras = ["dotenv"], version = "^1.8.2"}
 pydevd-pycharm = "^213.3714.452"
+psycopg2-binary = "^2.9.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

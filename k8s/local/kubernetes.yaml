@@ -1,3 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spend-api
+spec:
+  type: NodePort
+  selector:
+    app: spend-api
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
