@@ -1,3 +1,14 @@
+# Kube + Python Project Template 
+This repo acts as a template for _**efficiently**_ developing an API meant to be deployed in Kubernetes.
+
+It uses the following to ensure the fastest time of iteration possible:
+1. [FastAPI](https://fastapi.tiangolo.com/) - for easy API development and high performance
+2. [Pydantic](https://pydantic-docs.helpmanual.io/) - for data validation and API schema specification
+3. [Poetry](https://python-poetry.org/) - for Python dependency management
+4. [Minikube](https://minikube.sigs.k8s.io/docs/) - for providing a local Kubernetes cluster
+5. [Tilt](https://tilt.dev/) - for managing local Kubernetes resources, providing hot-reloads and smart rebuilds
+6. [Pycharm Remote Debug Server](https://www.jetbrains.com/help/idea/run-debug-configuration-python-remote-debug.html) - (Optional) for debugging the API process running in Minikube via the Pycharm Debugger
+
 ## Dev Env Setup
 
 ### Dev Env Dependencies
